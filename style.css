@@ -1,0 +1,188 @@
+*, ::after, ::before{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.header div{
+    display:inline-block;
+    font-size: 50px;
+    padding: 10px;
+    color: red;
+    animation: animHeader 1s ease forwards alternate;
+    
+   
+}
+.header div:nth-child(1){
+    animation-delay: 0.1s;
+}
+.header div:nth-child(2){
+    animation-delay: 0.2s;
+}
+.header div:nth-child(3){
+    animation-delay: 0.3s;
+}
+.header div:nth-child(4){
+    animation-delay: 0.4s;
+}
+.header div:nth-child(5){
+    animation-delay: 0.5s;
+}
+.header div:nth-child(6){
+    animation-delay: 0.6s;
+}
+.header div:nth-child(7){
+    animation-delay: 0.7s;
+}
+.header div:nth-child(8){
+    animation-delay: 0.8s;
+}
+.header div:nth-child(9){
+    animation-delay: 0.9s;
+}
+.header div:nth-child(10){
+    animation-delay: 1s;
+}
+.header div:nth-child(11){
+    animation-delay: 1.1s;
+}
+
+.container-block{
+    width: 700px;
+    height: 400px;
+    background-image: url(./image1.jpg);
+    border-radius: 10px;
+    margin: 20px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+    animation: anim1 4s ease 4s forwards ;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.cardOne{
+    display: flex;
+    color: rgba(255, 255, 255, 0.945);
+
+}
+
+.cardTwo{
+    display: flex;
+    color: rgba(255, 255, 255, 0.945);
+
+}
+
+span{
+    width: auto;
+    height: 50px;
+    text-align: center;
+    font-size: 50px;
+    overflow: hidden;
+    margin: 5px;
+}
+
+.cardOne span:nth-child(2){
+    animation: animY 2s ease 6s both;
+
+}
+.cardTwo span:nth-child(2){
+    animation: animX 2s ease 6s both;
+
+}
+.cardOne span:nth-child(1){
+    animation: animX 2s ease 5s both;
+
+}
+.cardOne span:nth-child(3){
+    animation: animX 2s ease 8s both;
+}
+.cardTwo span:nth-child(1){
+    animation: animY 2s ease 8s both;
+}
+
+
+button{
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    margin: 20px;
+    animation: animButton 2s ease 8s both;
+}
+
+@keyframes animHeader {
+    to{
+        transform: translateY(-50px) rotate(360deg);
+        color: rgb(155, 155, 197);
+    }
+}
+
+@keyframes anim1 {
+    0%{
+        transform: scale();
+    }
+    50%{
+        transform: scale(1.5);
+    }
+    100%{
+        transform: scale();
+    }
+       
+}
+
+@keyframes animButton {
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
+@keyframes animX {
+    0%{
+        transform: translateX(50px);
+        opacity: 0;
+    }        
+     50%{
+        transform: translateX(20px);
+        opacity: 0;
+    }  
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }  
+     
+    }
+
+    @keyframes animY {
+        0%{
+            transform: translateY(20px);
+            opacity: 0;
+        }        
+         50%{
+            transform: translateY(10px);
+            opacity: 1;
+        }  
+        100%{
+            transform: translateY(0px);
+            opacity: 1;
+        }  
+         
+        } 
+
+
+
